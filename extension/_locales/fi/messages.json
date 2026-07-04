@@ -163,7 +163,7 @@
     "message": "tuntematon virhe"
   },
   "extDescription": {
-    "message": "Analysoi sivuston evästeet ja korvaa seuranta-/mainontaevästeiden arvot lorem ipsum -valedatalla. Toiminnalliset ja kirjautumisevästeet jätetään koskematta."
+    "message": "Analysoi sivuston evästeet ja korvaa seuranta-/mainontaevästeiden arvot valedatalla. Kirjautumis- ja toimintaevästeet säilyvät."
   },
   "extName": {
     "message": "Cookie Defense"

@@ -163,7 +163,7 @@
     "message": "unknown error"
   },
   "extDescription": {
-    "message": "Analyzes a site's cookies and replaces tracking/advertising cookie values with lorem-ipsum-style fake data. Functional and login cookies are always left untouched."
+    "message": "Analyzes site cookies and replaces tracking/ad cookie values with fake data. Login and functional cookies are always left untouched."
   },
   "extName": {
     "message": "Cookie Defense"
