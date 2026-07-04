@@ -154,6 +154,10 @@ python3 scripts/build_cookie_db.py
 
 Oma koodi: MIT (ks. `LICENSE`). Evästetietokanta on johdettu Open Cookie Databasesta, Apache-2.0 (ks. `third_party/LICENSE-open-cookie-database`).
 
+## Yksityisyyskäytäntö
+
+[`docs/index.html`](docs/index.html) (suomeksi ja englanniksi) — julkaistuna GitHub Pagesin kautta osoitteessa **https://homey-ap.github.io/cookie-defense/** kun GitHub Pages on kytketty päälle repon asetuksista (Settings → Pages → Source: Deploy from a branch → `main` → `/docs`). Käytetään Chrome Web Store -listauksen pakollisena yksityisyyskäytäntö-linkkinä.
+
 ## Roadmap
 
 - [ ] Safari-portti (Safari Web Extension -konversio, `xcrun safari-web-extension-converter`)

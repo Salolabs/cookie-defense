@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookie Defense — Yksityisyyskäytäntö / Privacy Policy</title>
+<meta name="description" content="Cookie Defense -selainlaajennuksen yksityisyyskäytäntö.">
+<style>
+  body {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  h1 { font-size: 1.6em; margin-bottom: 4px; }
+  h2 { font-size: 1.15em; margin-top: 1.6em; }
+  .meta { color: #666; font-size: 0.9em; margin-top: 0; }
+  a { color: #1a5fb4; }
+  hr { margin: 40px 0; border: none; border-top: 1px solid #ddd; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 3px; font-size: 0.92em; }
+</style>
+</head>
+<body>
+
+<h1>Cookie Defense — Yksityisyyskäytäntö</h1>
+<p class="meta">Voimassa: 4.7.2026 · <a href="#privacy-policy-en">English version below</a> · <a href="https://github.com/homey-ap/cookie-defense">Lähdekoodi GitHubissa</a></p>
+
+<h2>Mitä laajennos tekee</h2>
+<p>Cookie Defense analysoi selaimesi evästeitä paikallisesti ja korvaa tunnistettujen seuranta-/mainontaevästeiden <strong>arvot</strong> satunnaisella, muoto-validilla valedatalla. Kirjautumis-, istunto- ja muut toiminnalliset evästeet jätetään koskematta.</p>
+
+<h2>Mitä dataa kerätään</h2>
+<p><strong>Ei mitään.</strong> Cookie Defense ei lähetä mitään dataa mihinkään palvelimelle, ei omalle eikä kolmannen osapuolen palvelimelle. Kaikki analyysi, luokittelu ja evästeiden muokkaus tapahtuu paikallisesti selaimessasi.</p>
+
+<h2>Mitä dataa tallennetaan ja missä</h2>
+<ul>
+<li><strong>chrome.storage.local</strong> (vain omalla laitteellasi, ei synkronoidu Chrome-tilin kautta): aggressiivisuustaso, oma whitelist-lista, per-sivusto automaattisuojausasetukset, sekä lyhytaikainen varmuuskopio peitetyistä evästearvoista (automaattinen vanheneminen 14 vrk, korkeintaan 500 kpl).</li>
+<li>Ei evästeitä, selaushistoriaa tai mitään muuta dataa siirretä laajennoksen ulkopuolelle.</li>
+</ul>
+
+<h2>Miksi laajennos tarvitsee laajat oikeudet</h2>
+<ul>
+<li><strong>cookies</strong> — evästeiden lukeminen (analyysia varten) ja arvon korvaaminen (peittämistä varten).</li>
+<li><strong>&lt;all_urls&gt; / activeTab / tabs</strong> — jotta laajennos voi analysoida ja peittää evästeitä millä tahansa käymälläsi sivustolla, ei vain ennalta valitulla listalla.</li>
+<li><strong>storage</strong> — asetusten, whitelistin ja varmuuskopioiden tallennus paikallisesti (ks. yllä).</li>
+</ul>
+
+<h2>Kolmannen osapuolen tietokanta</h2>
+<p>Evästeiden luokittelu perustuu osittain <a href="https://github.com/jkwakman/Open-Cookie-Database">Open Cookie Databaseen</a> (Apache-2.0), joka on bundlattu laajennoksen mukana paikallisena tiedostona — sitäkään ei haeta verkosta ajonaikaisesti.</p>
+
+<h2>Lähdekoodi</h2>
+<p>Laajennos on avointa lähdekoodia: <a href="https://github.com/homey-ap/cookie-defense">github.com/homey-ap/cookie-defense</a></p>
+
+<h2>Yhteystiedot</h2>
+<p>Kysymykset ja palaute: avaa issue GitHub-repossa yllä.</p>
+
+<hr>
+
+<h1 id="privacy-policy-en">Cookie Defense — Privacy Policy</h1>
+<p class="meta">Effective: 2026-07-04</p>
+
+<h2>What the extension does</h2>
+<p>Cookie Defense analyzes your browser's cookies locally and replaces the <strong>values</strong> of identified tracking/advertising cookies with random, format-valid fake data. Login, session, and other functional cookies are always left untouched.</p>
+
+<h2>What data is collected</h2>
+<p><strong>None.</strong> Cookie Defense does not send any data to any server, ours or a third party's. All analysis, classification, and cookie modification happens locally in your browser.</p>
+
+<h2>What data is stored, and where</h2>
+<ul>
+<li><strong>chrome.storage.local</strong> (on-device only, never synced through your Chrome account): aggressiveness level, your own whitelist, per-site auto-protection settings, and a short-lived backup of obfuscated cookie values (auto-expires after 14 days, capped at 500 entries).</li>
+<li>No cookies, browsing history, or any other data ever leaves the extension.</li>
+</ul>
+
+<h2>Why the extension needs broad permissions</h2>
+<ul>
+<li><strong>cookies</strong> — to read cookies (for analysis) and overwrite their values (for obfuscation).</li>
+<li><strong>&lt;all_urls&gt; / activeTab / tabs</strong> — so the extension can analyze and obfuscate cookies on any site you visit, not just a pre-selected list.</li>
+<li><strong>storage</strong> — to store settings, whitelist, and backups locally (see above).</li>
+</ul>
+
+<h2>Third-party database</h2>
+<p>Cookie classification is partly based on the <a href="https://github.com/jkwakman/Open-Cookie-Database">Open Cookie Database</a> (Apache-2.0), bundled with the extension as a local file — it is not fetched over the network at runtime either.</p>
+
+<h2>Source code</h2>
+<p>The extension is open source: <a href="https://github.com/homey-ap/cookie-defense">github.com/homey-ap/cookie-defense</a></p>
+
+<h2>Contact</h2>
+<p>Questions and feedback: open an issue on the GitHub repo above.</p>
+
+</body>
+</html>
