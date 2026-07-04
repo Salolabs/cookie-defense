@@ -140,6 +140,10 @@ Rakenneanalyysi (`lib/reverse.js`) on paikallista, ilmaista base64/JWT/hex/JSON-
 - **Ei suojaa fingerprinting-tekniikoilta** (canvas/WebGL/font-sormenjälki), jotka eivät käytä evästeitä lainkaan. Tämä työkalu ratkaisee vain eväste-pohjaisen seurannan.
 - Tietokanta on staattinen snapshot haun hetkeltä — päivitä ajoittain (ks. alla).
 
+## Mobiili (iOS / selaimet ilman laajennostukea)
+
+[`bookmarklet/`](bookmarklet/) sisältää kevyen, manuaalisesti käynnistettävän bookmarklet-version niille selaimille, joissa ei ole laajennosrajapintaa lainkaan (esim. DuckDuckGon iOS-sovellus). Se ei ole täysi portti — `document.cookie`-rajapinta ei näe HttpOnly-evästeitä eikä toimi taustalla automaattisesti — ks. [`bookmarklet/README.md`](bookmarklet/README.md) rajoituksista ja asennusohjeista.
+
 ## Tietokannan päivitys
 
 ```bash
