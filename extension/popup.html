@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cookie Defense</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cookie Defense</h1>
+      <p id="hostname" class="hostname">–</p>
+    </header>
+
+    <details id="settingsDetails" class="settings">
+      <summary data-i18n="settingsToggle">Asetukset</summary>
+      <label class="toggle">
+        <input type="checkbox" id="globalAutoToggle" />
+        <span data-i18n="globalAutoProtectLabel">Peitä automaattisesti kaikilla sivustoilla</span>
+      </label>
+      <p class="small" data-i18n="globalAutoProtectHint">Ohittaa alla olevan per-sivusto-kytkimen. Suojaa jatkossa asetettavat evästeet kaikkialla — käytä "Peitä kaikki tunnistetut seurantaevästeet" peittääksesi jo olemassa olevat heti.</p>
+      <p class="small" data-i18n="levelIntro">Kuinka aggressiivisesti tuntemattomat (tietokannassa tunnistamattomat) evästeet peitetään.</p>
+      <div id="levelPicker" class="level-picker"></div>
+      <p id="levelWarning" class="level-warning" hidden></p>
+    </details>
+
+    <nav class="tabs">
+      <button id="tabSite" class="tab active" type="button" data-i18n="tabSite">Tämä sivu</button>
+      <button id="tabBrowser" class="tab" type="button" data-i18n="tabBrowser">Koko selain</button>
+    </nav>
+
+    <section id="siteView">
+      <section class="controls">
+        <button id="analyzeBtn" type="button" data-i18n="analyzeBtn">Analysoi tämä sivu</button>
+        <button id="obfuscateBtn" type="button" disabled data-i18n="obfuscateBtn">Peitä nyt</button>
+        <label class="toggle">
+          <input type="checkbox" id="autoToggle" disabled />
+          <span data-i18n="autoToggleLabel">Peitä automaattisesti tällä sivustolla</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="revealToggle" />
+          <span data-i18n="revealToggleLabel">Näytä dekoodatut arvot (ei oletuksena)</span>
+        </label>
+      </section>
+
+      <p id="status" class="status"></p>
+
+      <section id="summary" class="summary" hidden>
+        <span class="pill pill-obfuscatable"><span id="countObfuscatable">0</span> <span data-i18n="labelObfuscatable">peitettävissä</span></span>
+        <span class="pill pill-safe"><span id="countSafe">0</span> <span data-i18n="labelSafe">ei kosketa</span></span>
+      </section>
+
+      <ul id="cookieList" class="cookie-list"></ul>
+
+      <section id="backupsSection" class="backups" hidden>
+        <h2 data-i18n="backupsHeader">Viimeksi peitetyt tällä sivustolla</h2>
+        <ul id="backupsList" class="backups-list"></ul>
+      </section>
+
+      <button id="downloadSiteReportBtn" type="button" disabled data-i18n="downloadReportBtn">Lataa raportti (.md)</button>
+    </section>
+
+    <section id="browserView" hidden>
+      <section class="controls">
+        <button id="fullScanBtn" type="button" data-i18n="fullScanBtn">Skannaa koko selain</button>
+        <button id="obfuscateAllBtn" type="button" disabled data-i18n="obfuscateAllBtn">Peitä kaikki tunnistetut seurantaevästeet (koko selain)</button>
+      </section>
+      <p id="browserStatus" class="status"></p>
+      <ul id="browserSummary" class="summary-list"></ul>
+      <button id="downloadBrowserReportBtn" type="button" disabled data-i18n="downloadReportBtn">Lataa raportti (.md)</button>
+    </section>
+
+    <footer>
+      <span data-i18n="footerPre">Luokittelu perustuu</span>
+      <a href="https://github.com/jkwakman/Open-Cookie-Database" target="_blank" rel="noopener">Open Cookie Database</a>
+      <span data-i18n="footerPost">-tietokantaan (Apache-2.0). Tuntemattomat ja toiminnalliset/kirjautumisevästeet jätetään aina koskematta. Rakenneanalyysi on paikallinen heuristiikka, ei varmennettu tieto.</span>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

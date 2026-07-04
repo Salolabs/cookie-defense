@@ -1,0 +1,564 @@
+{
+  "analyzeBtn": {
+    "message": "Analysoi tämä sivu"
+  },
+  "autoToggleLabel": {
+    "message": "Peitä automaattisesti tällä sivustolla"
+  },
+  "backupsHeader": {
+    "message": "Viimeksi peitetyt tällä sivustolla"
+  },
+  "browserStatusDone": {
+    "message": "Valmis."
+  },
+  "browserStatusObfuscated": {
+    "message": "$COUNT$ evästettä korvattu koko selaimessa.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "browserStatusObfuscating": {
+    "message": "Peitetään koko selaimessa…"
+  },
+  "browserStatusScanning": {
+    "message": "Skannataan koko selainta…"
+  },
+  "browserSummaryCategories": {
+    "message": "Kategoriat: $LIST$",
+    "placeholders": {
+      "LIST": {
+        "content": "$1"
+      }
+    }
+  },
+  "browserSummaryFlags": {
+    "message": "Ei HttpOnly: $A$ · Ei Secure: $B$ · JWT: $C$",
+    "placeholders": {
+      "A": {
+        "content": "$1"
+      },
+      "B": {
+        "content": "$2"
+      },
+      "C": {
+        "content": "$3"
+      }
+    }
+  },
+  "browserSummaryObfuscatable": {
+    "message": "Peitettävissä: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "browserSummaryRisk": {
+    "message": "Korkea riski: $HIGH$ · Keskitaso: $MEDIUM$",
+    "placeholders": {
+      "HIGH": {
+        "content": "$1"
+      },
+      "MEDIUM": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserSummaryTotal": {
+    "message": "$TOTAL$ evästettä / $DOMAINS$ domainia",
+    "placeholders": {
+      "DOMAINS": {
+        "content": "$2"
+      },
+      "TOTAL": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoryAnalytics": {
+    "message": "Analytiikka"
+  },
+  "categoryFunctional": {
+    "message": "Toiminnallinen"
+  },
+  "categoryMarketing": {
+    "message": "Markkinointi"
+  },
+  "categoryNecessary": {
+    "message": "Välttämätön"
+  },
+  "categoryPersonalization": {
+    "message": "Personointi"
+  },
+  "categorySecurity": {
+    "message": "Turvallisuus"
+  },
+  "categoryUnknown": {
+    "message": "Tuntematon"
+  },
+  "confirmObfuscateAll": {
+    "message": "Tämä korvaa $COUNT$ evästeen arvon valedatalla KAIKISSA selaimen avoinna olevissa/tallennetuissa domaineissa, ei vain nykyisellä sivulla. Toiminnalliset ja tunnistamattomat evästeet jätetään koskematta. Jatketaanko?",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "cookieMetaChars": {
+    "message": "$COUNT$ merkkiä",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "cookieMetaRiskPrefix": {
+    "message": "riski"
+  },
+  "cookieMetaSession": {
+    "message": "sessioeväste"
+  },
+  "downloadReportBtn": {
+    "message": "Lataa raportti (.md)"
+  },
+  "encBase64Json": {
+    "message": "Base64-koodattu JSON-rakenne"
+  },
+  "encBase64Text": {
+    "message": "Base64-koodattua tekstiä"
+  },
+  "encGaClientId": {
+    "message": "Google Analytics -asiakastunnisteen muoto (versio.domain-alue.satunnaisluku.aikaleima)"
+  },
+  "encHex": {
+    "message": "Heksadesimaalimerkkijono (esim. hash tai satunnaisluku)"
+  },
+  "encJson": {
+    "message": "Suoraan luettava JSON"
+  },
+  "encJwt": {
+    "message": "JWT (JSON Web Token) — base64url-koodattu, ei salattu; kuka tahansa sen näkevä voi lukea sisällön"
+  },
+  "encNumeric": {
+    "message": "Pelkkä numeerinen tunniste/laskuri"
+  },
+  "encOpaque": {
+    "message": "Ei tunnistettua rakennetta — todennäköisesti satunnainen tunniste tai palvelimen sisäinen viite"
+  },
+  "encUrlEncoded": {
+    "message": "URL-enkoodattua tekstiä"
+  },
+  "encUrlEncodedJson": {
+    "message": "URL-enkoodattu JSON"
+  },
+  "encUuid": {
+    "message": "UUID-muotoinen yksilöllinen tunniste"
+  },
+  "errorNoBackup": {
+    "message": "Tälle evästeelle ei löytynyt varmuuskopiota"
+  },
+  "errorUnknown": {
+    "message": "tuntematon virhe"
+  },
+  "extDescription": {
+    "message": "Analysoi sivuston evästeet ja korvaa seuranta-/mainontaevästeiden arvot lorem ipsum -valedatalla. Toiminnalliset ja kirjautumisevästeet jätetään koskematta."
+  },
+  "extName": {
+    "message": "Cookie Defense"
+  },
+  "factorDomainShared": {
+    "message": "Domain-attribuutti asetettu — jaettu koko alidomeeniperheelle, ei vain tälle hostille"
+  },
+  "factorHeuristicUnknown": {
+    "message": "Ei tietokannassa, mutta ei myöskään tunnistettu toiminnalliseksi/sessioksi — oletuksena peitettävissä"
+  },
+  "factorJwtFields": {
+    "message": "JWT-kentät: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "factorJwtPii": {
+    "message": "JWT sisältää henkilötietoon viittaavia kenttiä: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "factorLongLived": {
+    "message": "Pitkäikäinen: vanhenee n. $DAYS$ päivän kuluttua — pitkäkestoinen seuranta mahdollinen",
+    "placeholders": {
+      "DAYS": {
+        "content": "$1"
+      }
+    }
+  },
+  "factorNotHttpOnly": {
+    "message": "Ei HttpOnly — sivun oma JavaScript (ja siten myös mahdollinen XSS-hyökkäys) pääsee lukemaan arvon"
+  },
+  "factorNotSecure": {
+    "message": "Ei Secure — voidaan lähettää myös salaamattoman HTTP-yhteyden yli"
+  },
+  "factorSameSiteNone": {
+    "message": "SameSite=None — lähetetään myös sivustojenvälisissä (cross-site) pyynnöissä"
+  },
+  "factorTracking": {
+    "message": "Seurantaluokka: $CATEGORY$$PLATFORM$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1"
+      },
+      "PLATFORM": {
+        "content": "$2"
+      }
+    }
+  },
+  "flagDomainShared": {
+    "message": "domain-jaettu"
+  },
+  "flagHostOnly": {
+    "message": "host-only"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagNotHttpOnly": {
+    "message": "ei HttpOnly"
+  },
+  "flagNotSecure": {
+    "message": "ei Secure"
+  },
+  "flagPersistent": {
+    "message": "pysyvä"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagSession": {
+    "message": "sessioeväste"
+  },
+  "footerPost": {
+    "message": "-tietokantaan (Apache-2.0). Tuntemattomat ja toiminnalliset/kirjautumisevästeet jätetään aina koskematta. Rakenneanalyysi on paikallinen heuristiikka, ei varmennettu tieto."
+  },
+  "footerPre": {
+    "message": "Luokittelu perustuu"
+  },
+  "fullScanBtn": {
+    "message": "Skannaa koko selain"
+  },
+  "globalAutoProtectHint": {
+    "message": "Ohittaa alla olevan per-sivusto-kytkimen. Suojaa jatkossa asetettavat evästeet kaikkialla — käytä \"Peitä kaikki tunnistetut seurantaevästeet\" peittääksesi jo olemassa olevat heti."
+  },
+  "globalAutoProtectLabel": {
+    "message": "Peitä automaattisesti kaikilla sivustoilla"
+  },
+  "labelObfuscatable": {
+    "message": "peitettävissä"
+  },
+  "labelSafe": {
+    "message": "ei kosketa"
+  },
+  "labelUnknown": {
+    "message": "tuntematon"
+  },
+  "level1Desc": {
+    "message": "Peitä vain tietokannan tunnistamat seurantaevästeet. Tuntemattomia ei koskaan kosketa."
+  },
+  "level1Name": {
+    "message": "1 — Minimaalinen"
+  },
+  "level2Desc": {
+    "message": "Peitä myös tunnistamattomat evästeet, paitsi jos ne näyttävät sessio-/kirjautumisevästeiltä."
+  },
+  "level2Name": {
+    "message": "2 — Tasapainoinen (oletus)"
+  },
+  "level3Desc": {
+    "message": "Kuten taso 2, mutta HttpOnly+sessio-yhdistelmä ei enää yksin suojaa."
+  },
+  "level3Name": {
+    "message": "3 — Laaja"
+  },
+  "level4Desc": {
+    "message": "Vain evästeen sisällöstä (JWT-sessiotieto) tunnistettu kirjautuminen suojaa. Voi rikkoa kirjautumisia."
+  },
+  "level4Name": {
+    "message": "4 — Aggressiivinen"
+  },
+  "level4Warning": {
+    "message": "Varoitus: tällä tasolla joitain oikeita kirjautumisia voi hajota. Käytä Palauta-toimintoa jos jokin sivu ei enää toimi."
+  },
+  "level5ConfirmText": {
+    "message": "Taso 5 peittää käytännössä kaikki tuntemattomat evästeet, myös useimmat kirjautumis-/sessioevästeet. Tämä rikkoo todennäköisesti kirjautumisia sivustoilla. Jatketaanko?"
+  },
+  "level5Desc": {
+    "message": "Peitä käytännössä kaikki tuntemattomat. Rikkoo todennäköisesti kirjautumisia. Vain oma whitelist suojaa."
+  },
+  "level5Name": {
+    "message": "5 — Scorched earth"
+  },
+  "level5Warning": {
+    "message": "Erittäin aggressiivinen taso — kirjautumisten hajoaminen on todennäköistä. Käytä varmuuskopioita ja Palauta-toimintoa tarpeen mukaan."
+  },
+  "levelIntro": {
+    "message": "Kuinka aggressiivisesti tuntemattomat (tietokannassa tunnistamattomat) evästeet peitetään."
+  },
+  "obfuscateAllBtn": {
+    "message": "Peitä kaikki tunnistetut seurantaevästeet (koko selain)"
+  },
+  "obfuscateBtn": {
+    "message": "Peitä nyt"
+  },
+  "redactSuffix": {
+    "message": "…($COUNT$ merkkiä)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportCategoriesLabel": {
+    "message": "Kategoriat: $LIST$",
+    "placeholders": {
+      "LIST": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportDetectedFields": {
+    "message": "Havaitut kentät: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportEntryCategory": {
+    "message": "Luokka: **$CATEGORY$**$PLATFORM$ — $OBFUSCATABLE$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1"
+      },
+      "OBFUSCATABLE": {
+        "content": "$3"
+      },
+      "PLATFORM": {
+        "content": "$2"
+      }
+    }
+  },
+  "reportEntryFlags": {
+    "message": "Liput: $FLAGS$",
+    "placeholders": {
+      "FLAGS": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportEntryRisk": {
+    "message": "Riski: **$LEVEL$** (pisteet $SCORE$)",
+    "placeholders": {
+      "LEVEL": {
+        "content": "$1"
+      },
+      "SCORE": {
+        "content": "$2"
+      }
+    }
+  },
+  "reportEntryStructure": {
+    "message": "Rakenne: $SUMMARY$",
+    "placeholders": {
+      "SUMMARY": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportFullScanFlagCounts": {
+    "message": "Ei HttpOnly: $A$ · Ei Secure: $B$ · JWT-muotoisia: $C$",
+    "placeholders": {
+      "A": {
+        "content": "$1"
+      },
+      "B": {
+        "content": "$2"
+      },
+      "C": {
+        "content": "$3"
+      }
+    }
+  },
+  "reportFullScanNote": {
+    "message": "Huom: tämä lista kattaa kaikki selaimeen tallennetut evästeet riippumatta siitä mikä välilehti on auki. Se EI erottele luotettavasti mikä eväste kuuluu millekin sivulle kolmannen osapuolen upotuksena — se vaatisi verkkopyyntöjen (webRequest) seurantaa erikseen."
+  },
+  "reportFullScanObfuscatable": {
+    "message": "Peitettävissä: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportFullScanRiskCounts": {
+    "message": "Korkea riski: $HIGH$ · Keskitaso: $MEDIUM$",
+    "placeholders": {
+      "HIGH": {
+        "content": "$1"
+      },
+      "MEDIUM": {
+        "content": "$2"
+      }
+    }
+  },
+  "reportFullScanTitle": {
+    "message": "Cookie Defense — koko selaimen attack-surface-tilannekuva"
+  },
+  "reportFullScanTotal": {
+    "message": "Evästeitä yhteensä: $TOTAL$ / $DOMAINS$ domainissa",
+    "placeholders": {
+      "DOMAINS": {
+        "content": "$2"
+      },
+      "TOTAL": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportGeneratedAt": {
+    "message": "Luotu: $DATE$",
+    "placeholders": {
+      "DATE": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportHostname": {
+    "message": "Sivusto: **$HOSTNAME$**",
+    "placeholders": {
+      "HOSTNAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportIntro": {
+    "message": "Luokittelu perustuu Open Cookie Databaseen (Apache-2.0). Rakenneanalyysi on paikallinen, heuristinen tulkinta evästeen arvosta — ei varmennettu tieto siitä mitä palvelin todella tekee datalla."
+  },
+  "reportJwtFields": {
+    "message": "JWT-kentät: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportRiskFactorsHeader": {
+    "message": "Riskitekijät:"
+  },
+  "reportSiteTitle": {
+    "message": "Cookie Defense — attack-surface-raportti"
+  },
+  "reportTotalCookies": {
+    "message": "Evästeitä yhteensä: $TOTAL$ (peitettävissä: $OBFUSCATABLE$)",
+    "placeholders": {
+      "OBFUSCATABLE": {
+        "content": "$2"
+      },
+      "TOTAL": {
+        "content": "$1"
+      }
+    }
+  },
+  "restoreBtn": {
+    "message": "Palauta"
+  },
+  "revealToggleLabel": {
+    "message": "Näytä dekoodatut arvot (ei oletuksena)"
+  },
+  "riskHigh": {
+    "message": "Korkea"
+  },
+  "riskLow": {
+    "message": "Matala"
+  },
+  "riskMedium": {
+    "message": "Keskitaso"
+  },
+  "settingsToggle": {
+    "message": "Asetukset"
+  },
+  "statusAnalyzing": {
+    "message": "Analysoidaan…"
+  },
+  "statusAutoDisabled": {
+    "message": "Automaattinen peittäminen pois käytöstä."
+  },
+  "statusAutoEnabled": {
+    "message": "Automaattinen peittäminen käytössä tälle sivustolle."
+  },
+  "statusDisabling": {
+    "message": "Poistetaan käytöstä…"
+  },
+  "statusEnabling": {
+    "message": "Otetaan käyttöön…"
+  },
+  "statusErrorPrefix": {
+    "message": "Virhe: $MESSAGE$",
+    "placeholders": {
+      "MESSAGE": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusFoundCookies": {
+    "message": "$COUNT$ evästettä löytyi.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusNotSupported": {
+    "message": "Ei tuettu tällä sivulla"
+  },
+  "statusObfuscated": {
+    "message": "$COUNT$ evästettä korvattu valedatalla.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusObfuscating": {
+    "message": "Peitetään…"
+  },
+  "statusRestored": {
+    "message": "Palautettu: $NAME$",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusWhitelisted": {
+    "message": "Merkitty turvalliseksi ja palautettu: $NAME$",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabBrowser": {
+    "message": "Koko selain"
+  },
+  "tabSite": {
+    "message": "Tämä sivu"
+  },
+  "whitelistBtn": {
+    "message": "Merkitse turvalliseksi"
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "analyzeBtn": {
+    "message": "Analyze this page"
+  },
+  "autoToggleLabel": {
+    "message": "Auto-obfuscate on this site"
+  },
+  "backupsHeader": {
+    "message": "Recently obfuscated on this site"
+  },
+  "browserStatusDone": {
+    "message": "Done."
+  },
+  "browserStatusObfuscated": {
+    "message": "$COUNT$ cookie(s) replaced across whole browser.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "browserStatusObfuscating": {
+    "message": "Obfuscating across whole browser…"
+  },
+  "browserStatusScanning": {
+    "message": "Scanning whole browser…"
+  },
+  "browserSummaryCategories": {
+    "message": "Categories: $LIST$",
+    "placeholders": {
+      "LIST": {
+        "content": "$1"
+      }
+    }
+  },
+  "browserSummaryFlags": {
+    "message": "Not HttpOnly: $A$ · Not Secure: $B$ · JWT: $C$",
+    "placeholders": {
+      "A": {
+        "content": "$1"
+      },
+      "B": {
+        "content": "$2"
+      },
+      "C": {
+        "content": "$3"
+      }
+    }
+  },
+  "browserSummaryObfuscatable": {
+    "message": "Obfuscatable: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "browserSummaryRisk": {
+    "message": "High risk: $HIGH$ · Medium: $MEDIUM$",
+    "placeholders": {
+      "HIGH": {
+        "content": "$1"
+      },
+      "MEDIUM": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserSummaryTotal": {
+    "message": "$TOTAL$ cookies / $DOMAINS$ domains",
+    "placeholders": {
+      "DOMAINS": {
+        "content": "$2"
+      },
+      "TOTAL": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoryAnalytics": {
+    "message": "Analytics"
+  },
+  "categoryFunctional": {
+    "message": "Functional"
+  },
+  "categoryMarketing": {
+    "message": "Marketing"
+  },
+  "categoryNecessary": {
+    "message": "Necessary"
+  },
+  "categoryPersonalization": {
+    "message": "Personalization"
+  },
+  "categorySecurity": {
+    "message": "Security"
+  },
+  "categoryUnknown": {
+    "message": "Unknown"
+  },
+  "confirmObfuscateAll": {
+    "message": "This will replace $COUNT$ cookie value(s) with fake data across ALL domains stored in the browser, not just the current page. Functional and unrecognized cookies are left untouched. Continue?",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "cookieMetaChars": {
+    "message": "$COUNT$ characters",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "cookieMetaRiskPrefix": {
+    "message": "risk"
+  },
+  "cookieMetaSession": {
+    "message": "session cookie"
+  },
+  "downloadReportBtn": {
+    "message": "Download report (.md)"
+  },
+  "encBase64Json": {
+    "message": "Base64-encoded JSON structure"
+  },
+  "encBase64Text": {
+    "message": "Base64-encoded text"
+  },
+  "encGaClientId": {
+    "message": "Google Analytics client ID format (version.domain-depth.random.timestamp)"
+  },
+  "encHex": {
+    "message": "Hexadecimal string (e.g. a hash or random number)"
+  },
+  "encJson": {
+    "message": "Directly readable JSON"
+  },
+  "encJwt": {
+    "message": "JWT (JSON Web Token) — base64url-encoded, not encrypted; anyone who sees it can read the contents"
+  },
+  "encNumeric": {
+    "message": "Plain numeric identifier/counter"
+  },
+  "encOpaque": {
+    "message": "No recognized structure — likely a random identifier or an internal server reference"
+  },
+  "encUrlEncoded": {
+    "message": "URL-encoded text"
+  },
+  "encUrlEncodedJson": {
+    "message": "URL-encoded JSON"
+  },
+  "encUuid": {
+    "message": "UUID-format unique identifier"
+  },
+  "errorNoBackup": {
+    "message": "No backup found for this cookie"
+  },
+  "errorUnknown": {
+    "message": "unknown error"
+  },
+  "extDescription": {
+    "message": "Analyzes a site's cookies and replaces tracking/advertising cookie values with lorem-ipsum-style fake data. Functional and login cookies are always left untouched."
+  },
+  "extName": {
+    "message": "Cookie Defense"
+  },
+  "factorDomainShared": {
+    "message": "Domain attribute set — shared across the whole subdomain family, not just this host"
+  },
+  "factorHeuristicUnknown": {
+    "message": "Not in the database, but not recognized as functional/session either — obfuscatable by default"
+  },
+  "factorJwtFields": {
+    "message": "JWT fields: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "factorJwtPii": {
+    "message": "JWT contains fields that look like personal data: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "factorLongLived": {
+    "message": "Long-lived: expires in approx. $DAYS$ days — long-term tracking possible",
+    "placeholders": {
+      "DAYS": {
+        "content": "$1"
+      }
+    }
+  },
+  "factorNotHttpOnly": {
+    "message": "Not HttpOnly — the page's own JavaScript (and thus a possible XSS attack) can read the value"
+  },
+  "factorNotSecure": {
+    "message": "Not Secure — can also be sent over an unencrypted HTTP connection"
+  },
+  "factorSameSiteNone": {
+    "message": "SameSite=None — also sent on cross-site requests"
+  },
+  "factorTracking": {
+    "message": "Tracking category: $CATEGORY$$PLATFORM$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1"
+      },
+      "PLATFORM": {
+        "content": "$2"
+      }
+    }
+  },
+  "flagDomainShared": {
+    "message": "domain-shared"
+  },
+  "flagHostOnly": {
+    "message": "host-only"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagNotHttpOnly": {
+    "message": "not HttpOnly"
+  },
+  "flagNotSecure": {
+    "message": "not Secure"
+  },
+  "flagPersistent": {
+    "message": "persistent"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagSession": {
+    "message": "session cookie"
+  },
+  "footerPost": {
+    "message": "database (Apache-2.0). Unknown and functional/login cookies are always left untouched. Structural analysis is a local heuristic, not verified fact."
+  },
+  "footerPre": {
+    "message": "Classification is based on the"
+  },
+  "fullScanBtn": {
+    "message": "Scan whole browser"
+  },
+  "globalAutoProtectHint": {
+    "message": "Overrides the per-site toggle below. Protects cookies set from now on everywhere — use \"Obfuscate all identified tracking cookies\" to cover existing ones immediately."
+  },
+  "globalAutoProtectLabel": {
+    "message": "Auto-obfuscate on all sites"
+  },
+  "labelObfuscatable": {
+    "message": "obfuscatable"
+  },
+  "labelSafe": {
+    "message": "not touched"
+  },
+  "labelUnknown": {
+    "message": "unknown"
+  },
+  "level1Desc": {
+    "message": "Only obfuscate cookies the database recognizes as tracking. Unknown cookies are never touched."
+  },
+  "level1Name": {
+    "message": "1 — Minimal"
+  },
+  "level2Desc": {
+    "message": "Also obfuscate unrecognized cookies, unless they look like a session/login cookie."
+  },
+  "level2Name": {
+    "message": "2 — Balanced (default)"
+  },
+  "level3Desc": {
+    "message": "Like level 2, but the HttpOnly+session combination alone no longer protects."
+  },
+  "level3Name": {
+    "message": "3 — Broad"
+  },
+  "level4Desc": {
+    "message": "Only a login recognized from the cookie's own content (JWT session data) is protected. Can break logins."
+  },
+  "level4Name": {
+    "message": "4 — Aggressive"
+  },
+  "level4Warning": {
+    "message": "Warning: some real logins may break at this level. Use Restore if a site stops working."
+  },
+  "level5ConfirmText": {
+    "message": "Level 5 obfuscates virtually all unrecognized cookies, including most login/session cookies. This will likely break logins on some sites. Continue?"
+  },
+  "level5Desc": {
+    "message": "Obfuscates virtually everything unrecognized. Will likely break logins. Only your own whitelist protects anything."
+  },
+  "level5Name": {
+    "message": "5 — Scorched earth"
+  },
+  "level5Warning": {
+    "message": "Extremely aggressive level — broken logins are likely. Use backups and Restore as needed."
+  },
+  "levelIntro": {
+    "message": "How aggressively unrecognized (not in the database) cookies get obfuscated."
+  },
+  "obfuscateAllBtn": {
+    "message": "Obfuscate all identified tracking cookies (whole browser)"
+  },
+  "obfuscateBtn": {
+    "message": "Obfuscate now"
+  },
+  "redactSuffix": {
+    "message": "…($COUNT$ characters)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportCategoriesLabel": {
+    "message": "Categories: $LIST$",
+    "placeholders": {
+      "LIST": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportDetectedFields": {
+    "message": "Detected fields: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportEntryCategory": {
+    "message": "Category: **$CATEGORY$**$PLATFORM$ — $OBFUSCATABLE$",
+    "placeholders": {
+      "CATEGORY": {
+        "content": "$1"
+      },
+      "OBFUSCATABLE": {
+        "content": "$3"
+      },
+      "PLATFORM": {
+        "content": "$2"
+      }
+    }
+  },
+  "reportEntryFlags": {
+    "message": "Flags: $FLAGS$",
+    "placeholders": {
+      "FLAGS": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportEntryRisk": {
+    "message": "Risk: **$LEVEL$** (score $SCORE$)",
+    "placeholders": {
+      "LEVEL": {
+        "content": "$1"
+      },
+      "SCORE": {
+        "content": "$2"
+      }
+    }
+  },
+  "reportEntryStructure": {
+    "message": "Structure: $SUMMARY$",
+    "placeholders": {
+      "SUMMARY": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportFullScanFlagCounts": {
+    "message": "Not HttpOnly: $A$ · Not Secure: $B$ · JWT-shaped: $C$",
+    "placeholders": {
+      "A": {
+        "content": "$1"
+      },
+      "B": {
+        "content": "$2"
+      },
+      "C": {
+        "content": "$3"
+      }
+    }
+  },
+  "reportFullScanNote": {
+    "message": "Note: this list covers every cookie stored in the browser regardless of which tab is open. It does NOT reliably determine which page a third-party embedded cookie belongs to — that would require separate webRequest-based Set-Cookie tracking."
+  },
+  "reportFullScanObfuscatable": {
+    "message": "Obfuscatable: $COUNT$",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportFullScanRiskCounts": {
+    "message": "High risk: $HIGH$ · Medium: $MEDIUM$",
+    "placeholders": {
+      "HIGH": {
+        "content": "$1"
+      },
+      "MEDIUM": {
+        "content": "$2"
+      }
+    }
+  },
+  "reportFullScanTitle": {
+    "message": "Cookie Defense — whole-browser attack surface snapshot"
+  },
+  "reportFullScanTotal": {
+    "message": "Total cookies: $TOTAL$ across $DOMAINS$ domains",
+    "placeholders": {
+      "DOMAINS": {
+        "content": "$2"
+      },
+      "TOTAL": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportGeneratedAt": {
+    "message": "Generated: $DATE$",
+    "placeholders": {
+      "DATE": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportHostname": {
+    "message": "Site: **$HOSTNAME$**",
+    "placeholders": {
+      "HOSTNAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportIntro": {
+    "message": "Classification is based on the Open Cookie Database (Apache-2.0). Structural analysis is a local, heuristic interpretation of the cookie value — not verified fact about what the server actually does with the data."
+  },
+  "reportJwtFields": {
+    "message": "JWT fields: $FIELDS$",
+    "placeholders": {
+      "FIELDS": {
+        "content": "$1"
+      }
+    }
+  },
+  "reportRiskFactorsHeader": {
+    "message": "Risk factors:"
+  },
+  "reportSiteTitle": {
+    "message": "Cookie Defense — attack surface report"
+  },
+  "reportTotalCookies": {
+    "message": "Total cookies: $TOTAL$ (obfuscatable: $OBFUSCATABLE$)",
+    "placeholders": {
+      "OBFUSCATABLE": {
+        "content": "$2"
+      },
+      "TOTAL": {
+        "content": "$1"
+      }
+    }
+  },
+  "restoreBtn": {
+    "message": "Restore"
+  },
+  "revealToggleLabel": {
+    "message": "Show decoded values (off by default)"
+  },
+  "riskHigh": {
+    "message": "High"
+  },
+  "riskLow": {
+    "message": "Low"
+  },
+  "riskMedium": {
+    "message": "Medium"
+  },
+  "settingsToggle": {
+    "message": "Settings"
+  },
+  "statusAnalyzing": {
+    "message": "Analyzing…"
+  },
+  "statusAutoDisabled": {
+    "message": "Auto-obfuscation disabled."
+  },
+  "statusAutoEnabled": {
+    "message": "Auto-obfuscation enabled for this site."
+  },
+  "statusDisabling": {
+    "message": "Disabling…"
+  },
+  "statusEnabling": {
+    "message": "Enabling…"
+  },
+  "statusErrorPrefix": {
+    "message": "Error: $MESSAGE$",
+    "placeholders": {
+      "MESSAGE": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusFoundCookies": {
+    "message": "$COUNT$ cookie(s) found.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusNotSupported": {
+    "message": "Not supported on this page"
+  },
+  "statusObfuscated": {
+    "message": "$COUNT$ cookie(s) replaced with fake data.",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusObfuscating": {
+    "message": "Obfuscating…"
+  },
+  "statusRestored": {
+    "message": "Restored: $NAME$",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusWhitelisted": {
+    "message": "Marked safe and restored: $NAME$",
+    "placeholders": {
+      "NAME": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabBrowser": {
+    "message": "Whole browser"
+  },
+  "tabSite": {
+    "message": "This page"
+  },
+  "whitelistBtn": {
+    "message": "Mark as safe"
+  }
+}

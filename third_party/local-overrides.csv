@@ -1,0 +1,24 @@
+ID,Platform,Category,Cookie / Data Key name,Domain,Description,Retention period,Data Controller,User Privacy & GDPR Rights Portals,Wildcard match
+local-001,Criteo,Marketing,cto_bundle,,"Cross-site retargeting identifier/state bundle (base64-encoded). Confirmed via OSINT name analysis, not present in upstream Open Cookie Database.",1 year,Criteo,https://www.criteo.com/privacy/,0
+local-002,Criteo,Marketing,cto_bidid,,"Cross-site real-time-bidding identifier. Confirmed via OSINT name analysis.",1 year,Criteo,https://www.criteo.com/privacy/,0
+local-003,Criteo,Marketing,cto_dna,,"Criteo identifier variant (well-documented public naming convention, added preemptively).",1 year,Criteo,https://www.criteo.com/privacy/,0
+local-004,Google,Marketing,g_state,,"Google Identity Services (Sign in with Google widget) cross-site state cookie.",1 year,Google,https://business.safety.google/privacy/,0
+local-005,Prebid/PubCommon,Marketing,_pubcid,,"Shared cross-publisher identifier used in real-time-bidding auctions (Prebid SharedID family).",1 year,Prebid.org,https://prebid.org/,0
+local-006,RTB House,Marketing,__rtbh.lid,,"Real-time-bidding identifier (name explicitly references RTB).",1 year,RTB House,https://www.rtbhouse.com/privacy-policy/,0
+local-007,RTB House,Marketing,__rtbh.uid,,"Real-time-bidding user identifier.",1 year,RTB House,https://www.rtbhouse.com/privacy-policy/,0
+local-008,Kameleoon,Marketing,kameleoonVisitorCode,,"A/B-testing and behavioral personalization visitor identifier.",1 year,Kameleoon,https://www.kameleoon.com/privacy-policy,0
+local-009,Sailthru,Marketing,sailthru_hid,,"Email/content personalization identifier linking browsing to marketing-email profile.",1 year,Sailthru,https://www.sailthru.com/legal/privacy-policy/,0
+local-010,Tealium,Marketing,utag_main,,"Tealium tag-management visitor identifier; orchestrates data collection for many downstream vendors.",1 year,Tealium,https://tealium.com/privacy-policy/,0
+local-011,Tealium,Marketing,utag_main__sn,,"Tealium session-number companion cookie.",session,Tealium,https://tealium.com/privacy-policy/,0
+local-012,Quantum Metric,Marketing,QuantumMetricUserID,,"Session-replay analytics identifier (can capture clicks/scroll/typed input).",1 year,Quantum Metric,https://www.quantummetric.com/privacy-policy,0
+local-013,Alibaba Group,Marketing,cna,,"Cross-property tracking identifier used across Alibaba Group properties (Taobao/Alibaba/AliExpress).",1 year,Alibaba Group,https://terms.alicdn.com/legal-agreement/terms/privacy_policy/,0
+local-014,Alibaba Group,Marketing,sgcookie,,"Alibaba Group tracking/signature cookie, companion to cna.",1 year,Alibaba Group,https://terms.alicdn.com/legal-agreement/terms/privacy_policy/,0
+local-015,Snoobi,Analytics,SnoobiID,,"Finnish web-analytics platform visitor identifier, not covered by the (non-Finland-focused) upstream database.",1 year,Snoobi,,0
+local-017,ThreatMetrix,Security,thx_guid,,"Device-fingerprinting fraud-detection identifier. Intentionally left NOT obfuscatable: corrupting it can trigger fraud/bot mitigation on real accounts (payments, banking-adjacent checkouts) without meaningfully reducing tracking, since fingerprinting does not rely on the cookie value surviving.",1 year,LexisNexis Risk Solutions,,0
+local-018,ThreatMetrix,Security,tmx_guid,,"Device-fingerprinting fraud-detection identifier — see thx_guid rationale.",1 year,LexisNexis Risk Solutions,,0
+local-019,DataDome,Security,datadome,,"Bot-detection/anti-fraud identifier. Not obfuscatable: protects the user's own account access, does not build an advertising profile.",session,DataDome,https://datadome.co/privacy/,0
+local-020,Akamai,Security,bm_lso,,"Akamai Bot Manager anti-automation identifier. Not obfuscatable — see datadome rationale.",session,Akamai,,0
+local-021,Akamai,Security,bm_s,,"Akamai Bot Manager anti-automation identifier. Not obfuscatable.",session,Akamai,,0
+local-022,Akamai,Security,bm_sv,,"Akamai Bot Manager anti-automation identifier. Not obfuscatable.",session,Akamai,,0
+local-023,Akamai,Security,ak_bmsc,,"Akamai Bot Manager anti-automation identifier. Not obfuscatable.",session,Akamai,,0
+local-024,IAB Europe,Functional,eupubconsent-v2,,"IAB Europe TCF v2 consent string — the user's own recorded consent choice for the ad-tech ecosystem. Intentionally NOT obfuscatable: overwriting it with garbage risks the site reinterpreting an unparseable/invalid string as default (often opt-IN) consent, which would be worse for the user than leaving their real recorded choice in place.",1 year,IAB Europe,https://www.iab.com/guidelines/transparency-consent-framework/,0
