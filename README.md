@@ -89,7 +89,7 @@ Ei vaadi Chrome Web Storea eikä koodin allekirjoitusta — pelkkä paikallinen 
 
 ## Kielituki (i18n)
 
-Käyttöliittymä ja ladattavat raportit ovat suomeksi ja englanniksi (`extension/_locales/fi`, `extension/_locales/en`). Chrome valitsee kielen automaattisesti selaimen käyttöliittymäkielen perusteella (`chrome.i18n`); jos selain on jollain muulla kielellä, käytetään `manifest.json`:n `default_locale`-arvoa (`fi`).
+Käyttöliittymä ja ladattavat raportit ovat suomeksi ja englanniksi (`extension/_locales/fi`, `extension/_locales/en`). Chrome valitsee kielen automaattisesti selaimen käyttöliittymäkielen perusteella (`chrome.i18n`); jos selain on jollain muulla kielellä, käytetään `manifest.json`:n `default_locale`-arvoa (`en`).
 
 Sisäiset tunnisteet (evästekategoriat, riskitasot) ovat aina vakaita englanninkielisiä avaimia (esim. `"high"`, `"Analytics"`) riippumatta näyttökielestä — niitä käytetään mm. CSS-luokkina ja vertailuissa koodissa, ja `lib/i18n.js` kääntää ne näyttötekstiksi vasta käyttöliittymässä/raportissa. Uuden kielen lisääminen: kopioi `extension/_locales/en/messages.json` uudeksi lokaaliksi ja käännä `message`-kentät; avainjoukon on pysyttävä samana (`tests/smoke.test.mjs` tarkistaa tämän automaattisesti).
 
