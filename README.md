@@ -160,7 +160,7 @@ Oma koodi: MIT (ks. `LICENSE`). Evästetietokanta on johdettu Open Cookie Databa
 
 ## Yksityisyyskäytäntö
 
-[`docs/index.html`](docs/index.html) (suomeksi ja englanniksi) — julkaistuna GitHub Pagesin kautta osoitteessa **https://homey-ap.github.io/cookie-defense/** kun GitHub Pages on kytketty päälle repon asetuksista (Settings → Pages → Source: Deploy from a branch → `main` → `/docs`). Käytetään Chrome Web Store -listauksen pakollisena yksityisyyskäytäntö-linkkinä.
+[`docs/index.html`](docs/index.html) (suomeksi ja englanniksi) — julkaistuna GitHub Pagesin kautta osoitteessa **https://salolabs.github.io/cookie-defense/** kun GitHub Pages on kytketty päälle repon asetuksista (Settings → Pages → Source: Deploy from a branch → `main` → `/docs`). Käytetään Chrome Web Store -listauksen pakollisena yksityisyyskäytäntö-linkkinä.
 
 ## Roadmap
 
