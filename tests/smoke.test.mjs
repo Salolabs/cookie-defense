@@ -156,6 +156,21 @@ async function run(locale, expected) {
   );
   assert.equal(protectedByName.obfuscatable, false);
 
+  // Regression: a real full-browser scan found that \b (word-boundary)
+  // around sid/auth/token in the old pattern never fired at "_" (a JS regex
+  // word character) or inside camelCase/ALLCAPS runs, so real production
+  // login cookies like Microsoft's Azure AD "ESTSAUTH" and Booking.com's
+  // "bkng_sso_auth" were falling through as obfuscatable. Confirm the
+  // current (no-\b) pattern catches the actual names seen in that scan.
+  for (const realAuthName of ["ESTSAUTH", "ESTSAUTHLIGHT", "OhpAuth", "bkng_sso_auth", "guest_token", "ebaysid", "_C_Auth"]) {
+    const protectedReal = applyHeuristic(
+      { name: realAuthName, httpOnly: false, session: false },
+      { category: "Unknown", platform: "", obfuscatable: false, match: "none" },
+      { encoding: "opaque", details: {} }
+    );
+    assert.equal(protectedReal.obfuscatable, false, `${realAuthName} must be protected by the name-pattern signal`);
+  }
+
   // A database hit is trusted as-is — the heuristic must never override it
   // (e.g. must not "protect" a confirmed tracker just because its name
   // happens to contain "id").

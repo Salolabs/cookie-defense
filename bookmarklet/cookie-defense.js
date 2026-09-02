@@ -34,8 +34,11 @@
 (function () {
   "use strict";
 
+  // No \b around sid/auth/token — see extension/lib/heuristic.js for why:
+  // it silently excludes snake_case ("auth_token") and plain concatenation
+  // ("ebaysid", "ESTSAUTH") from this signal.
   var FUNCTIONAL_NAME_PATTERN =
-    /(session|logged.?in|\bsid\b|csrf|xsrf|\bauth\b|login|jwt|refresh.?token|access.?token|id.?token|\btoken\b)/i;
+    /(session|logged.?in|sid|csrf|xsrf|auth|login|jwt|refresh.?token|access.?token|id.?token|token)/i;
   var SESSION_CLAIM_KEYS = ["sub", "exp", "iat", "aud", "iss", "jti", "nbf", "scope", "token_type"];
 
   function b64urlDecode(s) {

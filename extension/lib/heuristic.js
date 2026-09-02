@@ -27,8 +27,18 @@
 
 import { DEFAULT_LEVEL, isWhitelisted } from "./settings.js";
 
+// No \b around sid/auth/token: JS regex treats "_" as a word character, so
+// \b never fires at the very common snake_case boundary ("auth_token",
+// "guest_token", "_sid") or plain concatenation ("ebaysid", "ESTSAUTH",
+// "OhpAuth") — a real full-browser scan found dozens of live examples,
+// including Microsoft's own Azure AD session cookies (ESTSAUTH*) and
+// Booking.com's SSO cookie (bkng_sso_auth), that \b silently excluded from
+// this signal. Dropping \b trades a few likely-harmless false positives
+// (e.g. "sidebar_open" now also reads as "protect this") for closing that
+// gap — matches this module's own stated risk preference (see module doc:
+// a spared tracker is the safe failure, a junked login is not).
 const FUNCTIONAL_NAME_PATTERN =
-  /(session|logged.?in|\bsid\b|csrf|xsrf|\bauth\b|login|jwt|refresh.?token|access.?token|id.?token|\btoken\b)/i;
+  /(session|logged.?in|sid|csrf|xsrf|auth|login|jwt|refresh.?token|access.?token|id.?token|token)/i;
 
 // JWT claim names that indicate an auth/session token rather than a tracking
 // identifier repurposing the JWT format (trackers almost never use these).
